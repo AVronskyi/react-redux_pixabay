@@ -1,26 +1,35 @@
-# Test project react-continent
+# Test project react-redux_pixabay
 
 ## Preview
-  [DEMO LINK](https://avronskyi.github.io/react-continent/)
+  [DEMO LINK](https://avronskyi.github.io/react-redux_pixabay/)
 
 ## Task:
-1. 
-2. Make each node show/hide all nested components by click on it's name.
+Тестовое задание React
+Необходимо реализовать приложение с использованием произвольных стилей компонентов используя sass/scss. 
+Для запросов использовать библиотеку axios
+Все запросы должны осуществляться через redux-thunk или redux-saga
 
-3. Make collapsible component logic from step 2 reusable between different components by using react hooks or HOC.
+1. Создать приложение с экосистемой react+reduxb pages.
 
-4. Using react context make it so when you click on any last node it will close all nodes in the tree (showing only continent list).
+2. Зарегистрироваться на https://pixabay.com/api/docs/  и получить собственный api key
 
-5. Create a function to generate nested mock data for your component. Function input should be: `n`-depth of JSON tree, `m`-number of children in each node. Output should be JSON structure compatible with your react component. Data can be random.
-Bonus task: make it so application will not consume a lot of memory for big `n` and `m` numbers when displayed with your component (generate data as needed by subcomponents).
+3. Используя данный ключ получить и реализовать вывод списка типа: https://pixabay.com/api/?key={ YOUR_KEY }&q=cats&image_type=all&per_page=100
 
-6. Connect [this countries graphql API](https://countries.trevorblades.com) to your components to display nesting of `Continent`, `Country` and `Language` types
+4. Вывод должен быть реализован в виде карточки сетки по 4 элемента в ряд.
 
-7. Bonus task: host your application with github pages.
+5. Карточка должна содержать изображение, теги, количество лайков и комментариев.
 
-## Technical stack
-- HTML
-- React
-- Typescript
-- Bootstrap
-- GraphQL
+6. Теги в карточке должны быть выведены в схожем стиле.
+
+7. При нажатии на изображение, пользователь должен быть перенаправлен на страницу со всей информацией об этой карточке.
+
+8. Данный JSON должен быть сохранён в redux state.
+
+9. Реализовать функционал сортировки этого списка по лайкам и комментариям.
+
+10. Реализовать фильтрацию по тегам используя инпут и событие keyup.
+
+11. Реализовать задержку в фильтрации 300мс(debounce).
+
+12. ** При двойном нажатии на список тегов в карточке на главной странице, мы должны иметь возможность менять в redux.
+Важно, чтобы изменение списка в одном элементе не вызывали рендер у других элементов списка.

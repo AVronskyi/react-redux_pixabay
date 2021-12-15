@@ -16,10 +16,10 @@ function App() {
 
   return (
     <Router>
-        <Routes>
-          <Route path="/" element={<ImagesList />}/>
-          <Route path="/image/:imageId" element={<ImageDetails />}/>
-          <Route path="*" element={<PageNotFound />} />
+      <Routes>
+        <Route path="/" element={<ImagesList />}/>
+        <Route path="/image/:imageId" element={<ImageDetails />}/>
+        <Route path="*" element={<PageNotFound />} />
         </Routes>
     </Router>
   );

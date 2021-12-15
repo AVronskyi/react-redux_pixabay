@@ -68,14 +68,14 @@ const ImagesList = () => {
             onClick={sortByLikes}
           >
             Sort by like
-            {sortBy === 'likes' && (isReversed ? '▲' : '▼')}
+            {sortBy === 'likes' && (isReversed ? '▼' : '▲')}
           </button>
 
           <button
             onClick={sortByComments}
           >
             Sort by comment 
-            {sortBy === 'comments' && (isReversed ? '▲' : '▼')}
+            {sortBy === 'comments' && (isReversed ? '▼' : '▲')}
           </button>
         </div>
 

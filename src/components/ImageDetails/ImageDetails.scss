@@ -1,0 +1,48 @@
+.details__card {
+  display: flex;
+  margin-top: 10px;
+  flex-direction: row;
+}
+
+.backLink {
+  width: 100%;
+  text-transform: uppercase;
+  padding: 20px;
+  border-bottom: 2px solid #efefef;
+  font-size: 12px;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.cardImage {
+  // padding: 30px;
+  width: 65%;
+  text-align: center;
+}
+
+.description {
+  width: 30%;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  // justify-content: center;
+}
+
+.round-img {
+  border-radius: 50%;
+}
+
+.cardInfo {
+  margin: 5px;
+}
+
+.name {
+  margin: 15px;
+}
+
+.cardTags {
+  margin: 10px;
+}
